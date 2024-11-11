@@ -1,0 +1,107 @@
+- index.html (página inicial)
+- animais.html (lista de animais para adoção)
+- detalhes.html (detalhes de um animal)
+- campanhas.html (campanhas de arrecadação)
+- adoção.html (formulário de adoção)
+- css/
+    - style.css
+- js/
+    - script.js
+- images/
+    - cachorro1.jpg
+    - cachorro2.jpg
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoção de Cachorros</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Adoção de Cachorros</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="animais.html">Animais para Adoção</a></li>
+                <li><a href="campanhas.html">Campanhas de Arrecadação</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Encontre um amigo para toda a vida!</h2>
+        <p>Conheça nossos cachorros para adoção e ajude em campanhas de arrecadação.</p>
+        <a href="animais.html" class="btn">Ver Animais para Adoção</a>
+        <a href="campanhas.html" class="btn">Apoiar Campanhas</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Adoção de Cachorros. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#home {
+    padding: 50px;
+    background-color: #264653;
+    color: white;
+    text-align: center;
+}
+
+#home .btn {
+    background-color: #e9c46a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+// Exemplo de alertas ou interações básicas com o usuário
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("Site carregado com sucesso!");
+});
